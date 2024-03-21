@@ -1,5 +1,3 @@
-
-
 resource "aws_s3_bucket" "tm-cloud-resume" {
   bucket = "tm-cloud-resume"
   tags = {
@@ -26,7 +24,6 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "tm-cloud-resume" 
 
 
 #assigning policy to enable cloudfront to access bucket
-
 resource "aws_s3_bucket_policy" "tm-cloud-resume" {
   depends_on = [
     aws_cloudfront_distribution.Site_Access
@@ -73,7 +70,6 @@ resource "aws_s3_bucket_versioning" "tm-cloud-resume" {
 }
 
 
-
 resource "aws_s3_object" "web_files" {
   for_each = fileset("../my-site", "**/*")
 
@@ -82,7 +78,6 @@ resource "aws_s3_object" "web_files" {
   source = "../my-site/${each.value}"
   etag   = filemd5("../my-site/${each.value}")
 }
-
 
 
 #Creates CloudFront distribution
