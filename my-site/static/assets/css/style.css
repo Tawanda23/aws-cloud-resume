@@ -873,6 +873,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 @media only screen and (max-width: 768px) {
     /* Styles for screens smaller than 768px (e.g., smartphones) */
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
     .container {
         padding: 0 10px; /* Adjust as needed */
     }
@@ -884,4 +888,5 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         max-width: 1200px;
     }
 }
+
 
