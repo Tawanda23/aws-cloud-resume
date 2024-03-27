@@ -14,15 +14,6 @@ This repository showcases my attempt at creating an AWS Cloud Resume in a multi-
 - **GitHub Actions**: Used for automating workflows, such as deploying changes to the website whenever there's a new commit to the GitHub repository.
 - **Terraform**: Infrastructure as code will be used for provisioning and managing AWS resources in a repeatable and automated manner.
 
-## Getting Started
-To get started with this project, follow these steps:
-
-1. Clone this repository to your local machine.
-2. Install Terraform and configure your AWS credentials.
-3. Modify the Terraform configuration files (`*.tf`) to customize the infrastructure according to your requirements.
-4. Run `terraform init` to initialize the Terraform configuration.
-5. Run `terraform apply` to apply the Terraform configuration and provision the AWS resources.
-6. Deploy your website files to the S3 bucket.
-7. Test the functionality of your website and make any necessary adjustments.
+#### Website can be accessed here: [Live Demo 🔗](https://resume.tawanda.cloud)
 
 
